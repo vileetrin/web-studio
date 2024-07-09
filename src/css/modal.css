@@ -83,7 +83,7 @@
 }
 
 .contacts-form-input {
-  width: 255px;
+  width: 245px;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -106,7 +106,7 @@
 }
 
 .contacts-form-comment {
-  width: 255px;
+  width: 252px;
   height: 120px;
   color: rgba(46, 47, 66, 0.4);
   font-size: 12px;
@@ -209,9 +209,12 @@
     width: 360px;
   }
 
-  .contacts-form-input,
+  .contacts-form-input {
+    width: 360px;
+  }
+
   .contacts-form-comment {
-    width: 355px;
+    width: 367px;
   }
 
   .checkbox-text {
@@ -243,7 +246,7 @@
   }
 
   .contacts-form-comment {
-    width: 365px;
+    width: 372px;
   }
 
   .contacts-form-input:focus {
