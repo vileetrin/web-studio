@@ -4,6 +4,7 @@ const mobileMenuCloseBtn = document.querySelector('.mobile-menu-close-btn');
 const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper');
 const mobileOpenBtn = document.querySelector('.mobile-open-btn');
 const OrderButton = document.querySelector('.order-button');
+const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
 
 function closeModal() {
   console.log('closeModal called');
@@ -31,4 +32,8 @@ mobileOpenBtn.addEventListener('click', openMobileMenu);
 OrderButton.addEventListener('click', function (event) {
   event.preventDefault();
   openModal();
+});
+
+mobileMenuLinks.forEach(link => {
+  link.addEventListener('click', closeMobileMenu);
 });
